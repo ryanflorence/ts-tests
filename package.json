@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "scripts": {
+    "test": " node --watch --import 'data:text/javascript,import { register } from \"node:module\"; import { pathToFileURL } from \"node:url\"; register(\"tsm\", pathToFileURL(\"./\"));' --"
+  },
+  "dependencies": {
+    "@types/node": "^20.11.19",
+    "tsm": "^2.3.0"
+  }
+}
